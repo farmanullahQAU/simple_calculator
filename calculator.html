@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+</html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+#div1 {
+	    background-color: rgb(74, 68, 68);
+    width: 16em;
+    height: 30em;
+    margin: 0px auto;
+    padding: 19px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 39px;
+    border-bottom-right-radius: 39px;
+    border-bottom-style: groove;
+    border-bottom-width: 17px;
+    border-bottom-color: black;
+
+
+
+
+
+
+}
+.btn_mid:hover{background-color:#72abb7;
+	color:white;
+	border:none;
+
+}
+.btn_mid:active{
+	background-color:#72abb7;
+}
+.btn_buttom:hover{
+background-color:#72abb7;
+color:white;
+border:none;
+}
+
+#screen{
+	 margin-top: 26px;
+    height: 77px;
+    background-color: #eaf5db;
+    width: 94%;
+    border-bottom-color: #cecaca;
+    border-bottom-width: 5px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    margin-left: 1px;
+    border-right-color: #c7c2c2;
+
+
+}
+
+
+input{
+	width: 41px;
+    height: 25px;
+    margin-top: 11px;
+    font-size: 11px;
+
+
+}
+
+#btnDel,#btnAc{
+	background-color: #f12121;
+    color: white;
+}
+
+#div3 {
+   
+    margin: 13px auto;
+
+}
+}
+#btn3{
+	background-color: red;
+}
+#btnOk {
+    width:79px;
+    height: 73px;
+    background-color: rgb(232,232,232);
+    border-top-left-radius: 55px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 55px;
+
+
+}
+#btnOk:hover{
+	background-color:#72abb7;
+	border:none;
+
+}
+#btnOk:active{
+	background-color:#72abb7;
+}
+
+
+
+.btn_buttom{
+        background-color: white;
+    border: 1px solid #797777;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #0c0c0c;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 6px;
+
+
+
+}
+
+.btn_mid{
+        background-color: #131212;
+    border: 1px solid white;
+    color: white;
+    font-size: 11px;
+    width: 34px;
+    height: 20px;
+    border-radius: 6px;
+    margin-top: 9px;
+    margin-left: 4px;
+}
+#btnMode{
+	    margin-left: 88px;
+}
+
+
+#div_top{
+
+     margin-top: -12px;
+    margin-bottom: -15px;
+    margin-left:-3px;
+}
+#div_mid{
+  margin-left: 2px;
+}
+#div_buttom{
+	margin-left: 0px;
+}
+.btns_top{
+	background-color: #f5f0f0;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    width: 36px;
+    height: 22px;
+    margin-left: 4px;
+    margin-top: 9px;
+
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="div1">
+<span style="color:white;font-size:15px">CASIO</span>
+<span style="color:white;font-size:20px;float:right" >&#x192 x- 82MS <sup> &#xae</sup></span>
+<form id="frm" type="text" name="frm">
+
+
+<input type="display" id="screen" name="screen">
+
+<div id="div3">
+
+<div id="div_top">
+<input style="background-color:white" class="btns_top" type="button" id="btn1" value="." " >
+<input style="background-color:white" class="btns_top" type="button" id="btn5" value="." ">
+<input class="btns_top" type="button" id="btnOk" value="&#xab REPLAY &#xbb" >
+<input style="background-color:white" class="btns_top" type="button" id="btn6" value=".">
+<input style="background-color:white" class="btns_top" type="button" id="btnMul" value="."  ><br>
+</div>
+
+<div id="div_mid">
+<input class="btn_mid" type="button" id="btnSigma" value="&#x2211">
+<input class="btn_mid" type="button" id="btnNcr" value="nCr" >
+<input class="btn_mid" type="button" id="btnMode" value="%"onclick="disp_value(this.value)">
+<input class="btn_mid" type="button" id="btnFun" value="&#402" ><br>
+<input class="btn_mid" type="button" id="btnAb" value="ab/c">
+<input class="btn_mid" type="button" id="btnRoot" value="&#x221A">
+<input class="btn_mid" type="button" id="btn4root" value="&#x221C">
+<input class="btn_mid" type="button" id="btnU2" value="&#x2227">
+
+<input class="btn_mid" type="button" id="btnLog" value="log">
+<input class="btn_mid"  type="button" id="btnLn" value="ln"><br>
+<input class="btn_mid"  type="button" id="btnU1" value="(-)">
+<input class="btn_mid"  type="button" id="btnDot" value="&#x221D" >
+<input class="btn_mid"  type="button" id="btnHyp" value="hyp">
+<input class="btn_mid"  type="button" id="btnSin" value="sin">
+<input class="btn_mid"  type="button" id="btnCos" value="cos" >
+<input class="btn_mid"  type="button" id="btnTan" value="tan"><br>
+<input class="btn_mid"  type="button" id="btnRcl" value="RCL" >
+<input class="btn_mid"  type="button" id="btnEng" value="ENG" >
+<input class="btn_mid"  type="button" id="btnRB" value="&#x2772" >
+<input class="btn_mid"  type="button" id="btnLB" value="&#x2773" >
+<input class="btn_mid"  type="button" id="btnComma" value="&#x275F" >
+<input class="btn_mid"  type="button" id="btnMplus" value="M+"><br>
+</div>
+
+<div id="div_buttom">
+<input class=" btn_buttom " type="button" id="btn7" value="7"onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btn8" value="8"onclick="disp_value(this.value)" >
+<input class=" btn_buttom " type="button" id="btn9" value="9" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btnDel" value="DEL" onclick="Delete()" >
+<input class=" btn_buttom " type="reset" id="btnAc" value="AC" ><br>
+
+<input class=" btn_buttom " type="button" id="btn4" value="4"onclick="disp_value(this.value)" >
+<input class=" btn_buttom " type="button" id="btn5" value="5"onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btn6" value="&#54" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btnMul" value="&#42"style="font-size:18px"  onclick="disp_value(this.value)" >
+<input class=" btn_buttom " type="button" id="btnDiv" value="/"style="font-size: 18px" onclick="disp_value(this.value)"><br>
+<input class=" btn_buttom " type="button" id="btn1" value="1" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btn2" value="2"onclick="disp_value(this.value)" >
+<input class=" btn_buttom " type="button" id="btn3" value="3" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btnPlus" value=" &#x2b"style="font-size: 19px" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btnMin" value="-"style="font-size: 19px"  onclick="disp_value(this.value)"><br>
+<input class=" btn_buttom " type="button" id="btn0" value="0" onclick="disp_value(this.value)">
+<input class=" btn_buttom " type="button" id="btnDot" value="&#x2022">
+<input class=" btn_buttom " type="button" id="btnExp" value="Exp"/>
+
+<input class=" btn_buttom " type="button" id="btnAns" value="Ans"/>
+
+<input class=" btn_buttom " type="button" id="btnEql" value="&#x3d" onclick="calculate(frm.screen.value)"><br>
+</div>
+</div>
+
+
+
+
+</form>
+</div>
+
+<script>
+
+function disp_value(val)
+{
+
+	
+	document.frm.screen.value=document.frm.screen.value+val;
+	document.getElementById("screen").style.fontSize="x-large"
+	
+}
+function calculate(val)
+{
+
+	x=eval(frm.screen.value)
+		
+		document.getElementById("screen").style.textAlign="right"
+
+
+		document.frm.screen.value=x;
+		
+
+}
+function Delete()
+{
+	document.frm.screen.value=document.frm.screen.value.slice(0,-1);
+
+
+}
+
+</script>
+</body>
+</html>
